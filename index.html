@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طبیعت جهان | مناظر زیبای طبیعی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-mountain text-2xl"></i>
+                <span class="font-semibold text-xl">طبیعت جهان</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="hover:text-green-200 transition-all">خانه</a>
+                <a href="#destinations" class="hover:text-green-200 transition-all">مقاصد گردشگری</a>
+                <a href="#gallery" class="hover:text-green-200 transition-all">گالری تصاویر</a>
+                <a href="#about" class="hover:text-green-200 transition-all">درباره ما</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">شگفتی‌های طبیعت جهان را کشف کنید</h1>
+            <p class="text-xl md:text-2xl mb-8">زیباترین مناظر طبیعی سیاره زمین را ببینید</p>
+            <a href="#destinations" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition-all inline-block">
+                شروع کنید
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">مقاصد برتر گردشگری</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover transition-all">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Swiss Alps" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">کوه‌های آلپ، سوئیس</h3>
+                        <p class="text-gray-600 mb-4">مناظر خیره‌کننده کوهستانی، پیست‌های اسکی معروف و روستاهای آلپی زیبا در این منطقه قرار دارند.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-semibold"><i class="fas fa-map-marker-alt ml-2"></i>اروپا</span>
+                            <button class="text-green-600 hover:text-green-800 font-semibold transition-all">بیشتر بخوانید</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover transition-all">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80" alt="Banff National Park" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">پارک ملی بنف، کانادا</h3>
+                        <p class="text-gray-600 mb-4">قدیمی‌ترین پارک ملی کانادا با دریاچه‌های فیروزه‌ای، قله‌های بلند و حیات وحش غنی.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-semibold"><i class="fas fa-map-marker-alt ml-2"></i>آمریکای شمالی</span>
+                            <button class="text-green-600 hover:text-green-800 font-semibold transition-all">بیشتر بخوانید</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover transition-all">
+                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Great Barrier Reef" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">دیواره بزرگ مرجانی، استرالیا</h3>
+                        <p class="text-gray-600 mb-4">بزرگترین مجموعه صخره‌های مرجانی جهان با تنوع زیستی خارق‌العاده و آب‌های زلال.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-semibold"><i class="fas fa-map-marker-alt ml-2"></i>اقیانوسیه</span>
+                            <button class="text-green-600 hover:text-green-800 font-semibold transition-all">بیشتر بخوانید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax h-96 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80')">
+        <div class="text-center bg-black bg-opacity-50 text-white p-8 rounded-lg max-w-2xl mx-4">
+            <h2 class="text-3xl font-bold mb-4">حفاظت از زیبایی‌های طبیعت</h2>
+            <p class="text-xl">شگفتی‌های طبیعی سیاره ما بسیار آسیب‌پذیر هستند. بیاموزید چگونه می‌توانید با سفر مسئولانه به حفظ این مناظر خارق‌العاده برای نسل‌های آینده کمک کنید.</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">گالری طبیعت</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Northern Lights" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">شفق قطبی، نروژ</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Amazon Rainforest" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">جنگل آمازون، برزیل</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Sahara Desert" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">صحرای بزرگ آفریقا، مراکش</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1494&q=80" alt="Mount Fuji" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">کوه فوجی، ژاپن</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1518630388191-315a71830a8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Victoria Falls" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">آبشار ویکتوریا، زامبیا/زیمبابوه</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1500382018108-823d5c3c1f3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tuscany" class="w-full h-64 object-cover hover:scale-105 transition-all duration-500">
+                    <div class="px-4 py-2 bg-white">
+                        <p class="text-gray-600 text-sm">توسکانی، ایتالیا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">درباره طبیعت جهان</h2>
+                    <p class="text-gray-600 mb-4">ماموریت ما نمایش زیباترین مناظر طبیعی سیاره زمین و الهام بخشیدن به مردم برای قدردانی و حفاظت از این شگفتی‌هاست.</p>
+                    <p class="text-gray-600 mb-6">از رشته کوه‌های بلند تا اقیانوس‌های پهناور، از جنگل‌های سرسبز تا بیابان‌های خشک - تنوع زمین واقعاً شگفت‌انگیز است. ما معتقدیم با به اشتراک گذاری این مکان‌های زیبا، می‌توانیم ارتباط عمیق‌تری بین مردم و طبیعت ایجاد کنیم.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-full transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nature" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">با شگفتی‌های طبیعت به روز بمانید</h2>
+            <p class="mb-6 max-w-2xl mx-auto">برای دریافت به‌روزرسانی‌های ماهانه درباره مقاصد زیبا، نکات سفر و تلاش‌های حفاظتی، در خبرنامه ما عضو شوید.</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="آدرس ایمیل شما" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+                <button class="bg-green-900 hover:bg-green-800 px-6 py-3 rounded-r-lg font-semibold transition-all">عضویت</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-mountain text-2xl text-green-400"></i>
+                        <span class="text-xl font-semibold">طبیعت جهان</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">کشف زیبایی‌های زمین، یک منظره در هر زمان</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="text-gray-400 mb-2">طراحی شده توسط:</p>
+                    <p class="font-semibold">محمد احمدی</p>
+                    <p class="text-gray-400">دانشجوی رشته فناوری اطلاعات - اردیبهشت ۱۴۰۴</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© ۱۴۰۳ طبیعت جهان. تمام حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (could be expanded)
+        document.querySelector('button').addEventListener('click', function() {
+            const navLinks = document.querySelector('.md\\:flex');
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('right-0');
+            navLinks.classList.toggle('bg-green-900');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('space-y-4');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
